@@ -4,6 +4,7 @@ use_frameworks!
 target 'PuzzleQuest' do
   pod 'AppLovinSDK', '~> 13.6'
   pod 'AppLovinMediationUnityAdsAdapter', '~> 4.20'
+  pod 'AppLovinMediationGoogleAdapter', '13.12.0.0'
 end
 
 post_install do |installer|
