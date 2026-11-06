@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		358DA2757A9BAB4286D4F6C3 /* RewardedAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3571DDE7297A8A957853A1D /* RewardedAdController.swift */; };
 		3F36B06C115A543F86997B35 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E82315006E26D8B3727D98 /* GameViewController.swift */; };
 		721500CC9F8C3ED62FB34380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86B8CA6761E3FB94B2EE4D4 /* AppDelegate.swift */; };
 		7A10AA4A63926718019259E1 /* InterstitialAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1813CA1CB53DF433910D37 /* InterstitialAdController.swift */; };
@@ -21,7 +20,6 @@
 		83E82315006E26D8B3727D98 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AEA6391BC765333341055863 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 		B86B8CA6761E3FB94B2EE4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3571DDE7297A8A957853A1D /* RewardedAdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -49,7 +47,6 @@
 			children = (
 				AEA6391BC765333341055863 /* AdManager.swift */,
 				4A1813CA1CB53DF433910D37 /* InterstitialAdController.swift */,
-				C3571DDE7297A8A957853A1D /* RewardedAdController.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -121,7 +118,6 @@
 				721500CC9F8C3ED62FB34380 /* AppDelegate.swift in Sources */,
 				3F36B06C115A543F86997B35 /* GameViewController.swift in Sources */,
 				7A10AA4A63926718019259E1 /* InterstitialAdController.swift in Sources */,
-				358DA2757A9BAB4286D4F6C3 /* RewardedAdController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

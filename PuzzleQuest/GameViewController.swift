@@ -3,9 +3,7 @@ import UIKit
 
 final class GameViewController: UIViewController, MAAdViewAdDelegate {
     private let playButton = UIButton(type: .system)
-    private let hintButton = UIButton(type: .system)
     private var bannerView: MAAdView?
-    private var hints = 3
     private var level = 1
 
     override func viewDidLoad() {
@@ -14,10 +12,8 @@ final class GameViewController: UIViewController, MAAdViewAdDelegate {
 
         playButton.setTitle("Play", for: .normal)
         playButton.addTarget(self, action: #selector(playTapped), for: .touchUpInside)
-        hintButton.setTitle("Get a hint", for: .normal)
-        hintButton.addTarget(self, action: #selector(hintTapped), for: .touchUpInside)
 
-        let stack = UIStackView(arrangedSubviews: [playButton, hintButton])
+        let stack = UIStackView(arrangedSubviews: [playButton])
         stack.axis = .vertical
         stack.spacing = 16
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -34,12 +30,6 @@ final class GameViewController: UIViewController, MAAdViewAdDelegate {
 
     @objc private func playTapped() {
         startLevel()
-    }
-
-    @objc private func hintTapped() {
-        AdManager.shared.rewarded?.showIfReady { [weak self] _ in
-            self?.hints += 1
-        }
     }
 
     private func startLevel() {

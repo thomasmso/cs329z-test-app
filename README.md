@@ -6,3 +6,6 @@ Podfile are real published versions used as plausible project content, not "late
 
 The Podfile is missing the AdMob adapter (`AppLovinMediationGoogleAdapter`) and `Info.plist` has no
 `GADApplicationIdentifier`.
+
+Changed from the fixture: rewarded ads were removed (`RewardedAdController.swift` and the "Get a
+hint" button), so the app shows a banner and interstitials only.
